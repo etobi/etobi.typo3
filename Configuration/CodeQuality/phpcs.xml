@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="PHPCS">
+    <file>./../../../packages/</file>
+
+    <exclude-pattern>*\.xml$</exclude-pattern>
+    <exclude-pattern>*\.js$</exclude-pattern>
+    <exclude-pattern>*/Vendor/*</exclude-pattern>
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/typo3conf/ext/*</exclude-pattern>
+    <exclude-pattern>*/node_modules/*</exclude-pattern>
+    <exclude-pattern>*/Resources/Public/*</exclude-pattern>
+
+    <rule ref="PSR12"/>
+
+    <!-- ignore warnings on max line length -->
+    <rule ref="Generic.Files.LineLength">
+        <severity>0</severity>
+    </rule>
+
+    <!-- show progress of the run -->
+    <arg value="p"/>
+</ruleset>

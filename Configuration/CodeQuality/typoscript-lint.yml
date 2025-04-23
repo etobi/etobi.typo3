@@ -1,0 +1,28 @@
+paths:
+  - ../../../packages
+filePatterns:
+  - "*.typoscript"
+  - "*.tsconfig"
+  - "*.ts"
+  - "setup.txt"
+  - "constants.txt"
+sniffs:
+  - class: Indentation
+    parameters:
+      useSpaces: true
+      indentPerLevel: 2
+      indentConditions: true
+  - class: DeadCode
+    disabled: true
+  - class: OperatorWhitespace
+  - class: RepeatingRValue
+    disabled: true
+  - class: DuplicateAssignment
+    disabled: true
+  - class: EmptySection
+  - class: NestingConsistency
+    disabled: true
+    parameters:
+      commonPathPrefixThreshold: 1
+  - class: ConfigNoCache
+    disabled: true

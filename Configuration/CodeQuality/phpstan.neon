@@ -1,0 +1,20 @@
+parameters:
+    level: 2
+    reportUnmatchedIgnoredErrors: false
+    paths:
+        - ./../../../packages
+    tips:
+        treatPhpDocTypesAsCertain: false
+    tmpDir: .phpstan
+    ignoreErrors:
+        - identifier: nullCoalesce.offset
+        - identifier: booleanNot.exprNotBoolean
+        - identifier: ternary.condNotBoolean
+        - identifier: if.condNotBoolean
+        - identifier: booleanAnd.leftNotBoolean
+        - identifier: booleanAnd.rightNotBoolean
+        - identifier: empty.notAllowed
+        - identifier: cast.useless
+    excludePaths:
+        - */Tests/Unit/*
+    reportUnmatchedIgnoredErrors: false
