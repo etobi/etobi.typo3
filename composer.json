@@ -60,7 +60,7 @@
     },
     "package-scripts": {
       "typo3-cms-scripts": [
-        "echo 'install:fixfolderstructure...' && typo3 install:fixfolderstructure"
+        "@php typo3 install:fixfolderstructure"
       ]
     }
   }
