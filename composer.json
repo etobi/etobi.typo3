@@ -9,7 +9,7 @@
     }
   ],
   "require": {
-    "cweagans/composer-patches": "^1",
+    "cweagans/composer-patches": "*",
     "helhum/dotenv-connector": "^3.1",
     "helhum/typo3-console": "^8.2",
     "kuria/composer-pkg-scripts": "dev-master",
